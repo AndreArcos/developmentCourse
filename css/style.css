@@ -56,6 +56,15 @@ body {
 .menu li {
     padding: 10px;
     border-bottom: 2px black solid;
+    display: flex;
+    align-items: center;
+    transition: all .2s linear;
+}
+
+.hover-efect li:hover {
+    cursor: pointer;
+    background-color: rgba(139, 124, 124, 0.297);
+    transition: all .2s linear;
 }
 
 .iconon {
@@ -112,6 +121,10 @@ body {
     font-family: Arial;
 }
 
+.task li:last-child {
+    border-bottom: none;
+}
+
 .complete {
     text-decoration: line-through;
 }
@@ -124,4 +137,53 @@ body {
 /*******Utilidades********/
 .text-center {
     text-align: center;
+}
+
+/*************************/
+/********Dark mode********/
+.night {
+    color: #ccc;
+}
+
+.night .header {
+    background-color: #333;
+    box-shadow: none;
+    border-bottom: 2px #ccc solid;
+}
+
+.night .navegation li a {
+    color: #ccc;
+}
+
+.night .opcion {
+    background-color: #333;
+    border-right: 2px #ccc solid;
+}
+
+.night .menu li {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .menu li a {
+    color: #ccc
+}
+
+.night .content {
+    background-color: #333;
+}
+
+.night .title-task {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .list-task {
+    border: 2px #ccc solid;
+}
+
+.night .task li {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .task li:last-child {
+    border-bottom: none;
 }
