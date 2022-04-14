@@ -35,18 +35,18 @@ body {
 
 }
 
-.icono:hover {
-    /*animation: rotateLogo 1s 1s 1 linear;*/
-    /*animation-name: bounce;
+/*.icono:hover {
+    animation: rotateLogo 1s 1s 1 linear;
+    animation-name: bounce;
     transform-origin: center bottom;
     animation-duration: 1s;
-    animation-fill-mode: both;*/
+    animation-fill-mode: both;
 
-    /*animation-name: swing;
+    animation-name: swing;
     transform-origin: top center;
     animation-duration: 1s;
-    animation-fill-mode: both;*/
-}
+    animation-fill-mode: both;
+}*/
 
 .navegation {
     display: flex;
@@ -101,6 +101,11 @@ body {
     padding: 18px;
 }
 
+.content-control {
+    display: flex;
+    justify-content: center;
+}
+
 .content-control input {
     width: 500px;
     height: 40px;
@@ -113,6 +118,10 @@ body {
     background-color: rgb(41, 168, 172);
     border: none;
     margin-bottom: 50px;
+}
+
+.content-control button i {
+    font-size: 33px;
 }
 
 .list-task {
