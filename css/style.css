@@ -1,5 +1,8 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 /***************************/
 /********Variables**********/
+/*:root
 /***************************/
 /*****Resetear estilos******/
 * {
@@ -34,10 +37,10 @@ body {
 
 .icono:hover {
     /*animation: rotateLogo 1s 1s 1 linear;*/
-    animation-name: bounce;
+    /*animation-name: bounce;
     transform-origin: center bottom;
     animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: both;*/
 
     /*animation-name: swing;
     transform-origin: top center;
@@ -90,6 +93,7 @@ body {
     text-decoration: none;
     color: rgb(17, 22, 11);
     font-family: Arial;
+    margin-left: 20px;
 }
 
 .content {
