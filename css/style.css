@@ -1,3 +1,41 @@
+/***************************/
+/********Variables**********/
+/***************************/
+/*****Resetear estilos******/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    box-shadow: 0px -2px 9px 0px black;
+    padding-top: 15px;
+}
+
 body {
-    background-color: cornflowerblue;
+    background-color: rgba(95, 129, 192, 0.352);
+}
+
+.icono {
+    display: block;
+    margin: 0px auto;
+    height: 100px;
+}
+
+.navegation {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navegation li a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(17, 22, 11);
+    font-family: Arial;
 }
