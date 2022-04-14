@@ -68,3 +68,60 @@ body {
     color: rgb(17, 22, 11);
     font-family: Arial;
 }
+
+.content {
+    width: 80%;
+    padding: 18px;
+}
+
+.content-control input {
+    width: 500px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+.content-control button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(41, 168, 172);
+    border: none;
+    margin-bottom: 50px;
+}
+
+.list-task {
+    border: 2px black solid;
+    width: 100%;
+    max-width: 650px;
+    margin: 0px auto;
+    display: block;
+}
+
+.title-task {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px black solid;
+    background-color: rgb(35, 129, 129);
+}
+
+.task li {
+    border-bottom: 2px black solid;
+    padding: 15px;
+    text-align: left;
+    font-family: Arial;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+
+
+
+
+/*************************/
+/*******Utilidades********/
+.text-center {
+    text-align: center;
+}
