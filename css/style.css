@@ -258,8 +258,57 @@ body {
 }
 
 /**************************/
+/**********Night***********/
+.night {
+    color: #ccc;
+}
+
+.night .header {
+    background-color: #333;
+    box-shadow: none;
+    border-bottom: 2px #ccc solid;
+}
+
+.night .navegation li a {
+    color: #ccc;
+}
+
+.night .opcion {
+    background-color: #333;
+    border-right: 2px #ccc solid;
+}
+
+.night .menu li {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .menu li a {
+    color: #ccc
+}
+
+.night .content {
+    background-color: #333;
+}
+
+.night .title-task {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .list-task {
+    border: 2px #ccc solid;
+}
+
+.night .task li {
+    border-bottom: 2px #ccc solid;
+}
+
+.night .task li:last-child {
+    border-bottom: none;
+}
+
+/**************************/
 /*******Media Query********/
-@media (max-width: 668px) {
+@media (max-width: 688px) {
     .opcion {
         display: none;
     }
@@ -321,72 +370,48 @@ body {
         font-size: 2.5rem;
     }
 
+    .title-task {
+        text-align: center;
+    }
+
     .task {
         display: flex;
         flex-wrap: wrap;
+        /*justify-content: space-around;*/
     }
 
     .task li {
-        width: 50%;
-        border-left: 2px #ccc solid;
+        width: 45%;
         height: 100px;
         align-items: center;
         /* align-self: center; */
         /* align-content: center; */
-        display: flex;
+        display: inline-flex;
         justify-content: center;
+        border: 1px rgb(191, 98, 98) solid;
+        margin: 10px 2%;
+        border-radius: 8px;
+        background-color: rgb(191, 98, 98);
     }
 
-    .title-task {
-        text-align: center;
+    .task li:nth-of-type(4n+1) {
+        background-color: rgb(75, 154, 88);
     }
-}
 
-/**************************/
-/**********Night***********/
-.night {
-    color: #ccc;
-}
+    .task li:nth-of-type(3n+4) {
+        background-color: rgb(197, 132, 62);
+    }
 
-.night .header {
-    background-color: #333;
-    box-shadow: none;
-    border-bottom: 2px #ccc solid;
-}
+    .night .task li:last-child {
+        border-bottom: 1px rgb(191, 98, 98) solid;
+    }
 
-.night .navegation li a {
-    color: #ccc;
-}
+    .night .task li {
+        border-bottom: 1px rgb(191, 98, 98) solid;
+    }
 
-.night .opcion {
-    background-color: #333;
-    border-right: 2px #ccc solid;
-}
+    .task li:last-child {
+        border-bottom: 1px rgb(191, 98, 98) solid;
+    }
 
-.night .menu li {
-    border-bottom: 2px #ccc solid;
-}
-
-.night .menu li a {
-    color: #ccc
-}
-
-.night .content {
-    background-color: #333;
-}
-
-.night .title-task {
-    border-bottom: 2px #ccc solid;
-}
-
-.night .list-task {
-    border: 2px #ccc solid;
-}
-
-.night .task li {
-    border-bottom: 2px #ccc solid;
-}
-
-.night .task li:last-child {
-    border-bottom: none;
 }
