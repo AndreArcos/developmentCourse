@@ -415,3 +415,57 @@ body {
     }
 
 }
+
+/*****************************************/
+/************Media Query tablet***********/
+@media (min-width:689px) and (max-width:1024px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icono {
+        margin: initial;
+        display: block;
+        height: 50px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .title-task {
+        text-align: center;
+    }
+
+    .task {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .task li {
+        width: 28%;
+        height: 100px;
+        align-items: center;
+        /* align-self: center; */
+        /* align-content: center; */
+        display: inline-flex;
+        justify-content: center;
+        border: 1px rgb(150, 56, 56) solid;
+        margin: 10px 2%;
+        border-radius: 8px;
+        background-color: rgb(191, 98, 98);
+    }
+
+    .task li:nth-of-type(2n+1) {
+        background-color: rgb(75, 154, 88);
+    }
+
+    .task li:nth-of-type(3n+3) {
+        background-color: rgb(197, 132, 62);
+    }
+
+    .task li:nth-child(6) {
+        background-color: rgb(156, 73, 156);
+    }
+
+}
