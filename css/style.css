@@ -30,6 +30,8 @@ img {
     text-align: center;
 }
 
+
+
 body {
     background-color: rgba(95, 129, 192, 0.352);
 }
@@ -164,6 +166,10 @@ body {
     text-decoration: line-through;
 }
 
+.menuHamburguer {
+    display: none;
+}
+
 
 
 
@@ -283,6 +289,7 @@ body {
     .navegation {
         flex-direction: column;
         padding: 0px;
+        display: none;
     }
 
     .navegation li {
@@ -302,6 +309,16 @@ body {
         display: block;
         height: 50px;
         margin-left: 10px;
+    }
+
+    .menuHamburguer {
+        height: 40px;
+        width: 40px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem;
     }
 }
 
