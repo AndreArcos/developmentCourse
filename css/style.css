@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -22,6 +27,7 @@ img {
 .header {
     box-shadow: 0px -2px 9px 0px black;
     padding-top: 15px;
+    text-align: center;
 }
 
 body {
@@ -55,6 +61,7 @@ body {
 }
 
 .navegation li a {
+    display: block;
     margin: 0px 10px;
     text-decoration: none;
     color: rgb(17, 22, 11);
@@ -63,6 +70,7 @@ body {
 
 .container {
     display: flex;
+    height: 100%;
 }
 
 .opcion {
@@ -243,8 +251,62 @@ body {
     }
 }
 
-/*************************/
-/**********Night**********/
+/**************************/
+/*******Media Query********/
+@media (max-width: 668px) {
+    .opcion {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-control {
+        width: 100%;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+
+    .content-control input {
+        width: 100%;
+    }
+
+    .content-control button {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .navegation {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .navegation li {
+        border-bottom: 2px #ccc solid;
+    }
+
+    .navegation li:last-child {
+        border-bottom: none;
+    }
+
+    .navegation li a {
+        margin: 15px 15px;
+    }
+
+    .icono {
+        margin: initial;
+        display: block;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+/**************************/
+/**********Night***********/
 .night {
     color: #ccc;
 }
